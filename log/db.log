@@ -1,0 +1,945 @@
+﻿[2016/03/14 16:55:21] [1]: Consulta: Select *, DATE_FORMAT(date,'%d-%m-%Y') as fecha from activities_chl ORDER BY date  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cuntransfers.activities_chl' doesn't exist 
+[2016/03/14 16:55:26] [1]: Consulta: Select *, DATE_FORMAT(date,'%d-%m-%Y') as fecha from activities_chl ORDER BY date  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cuntransfers.activities_chl' doesn't exist 
+[2016/03/14 18:34:03] [1]: Consulta: SELECT name,city FROM hotels where name LIKE '%wes%' ORDER by name -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cuntransfers.hotels' doesn't exist 
+[2016/11/14 17:04:50] [1]: Consulta: Select * from usuarios WHERE user = '' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:04:50] [1]: Consulta: SELECT DECODE(passcode,'oswego') as contra FROM usuarios WHERE user = 'caribesoft@gmail.com' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:04:50] [1]: Consulta: SELECT Count(*) AS total FROM usuarios WHERE user = 'caribesoft@gmail.com'  -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:04:52] [1]: Consulta: Select * from usuarios WHERE user = '' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:04:52] [1]: Consulta: SELECT DECODE(passcode,'oswego') as contra FROM usuarios WHERE user = 'caribesoft@gmail.com' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:04:52] [1]: Consulta: SELECT Count(*) AS total FROM usuarios WHERE user = 'caribesoft@gmail.com'  -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:09:11] [1]: Consulta: Select * from usuarios WHERE user = '' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:09:11] [1]: Consulta: SELECT DECODE(passcode,'oswego') as contra FROM usuarios WHERE user = 'caribesoft@gmail.com' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:09:11] [1]: Consulta: SELECT Count(*) AS total FROM usuarios WHERE user = 'caribesoft@gmail.com'  -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:13:14] [1]: Consulta: Select * from usuarios WHERE user = '' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:13:14] [1]: Consulta: SELECT DECODE(passcode,'oswego') as contra FROM usuarios WHERE user = 'ADMIN' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:13:14] [1]: Consulta: SELECT Count(*) AS total FROM usuarios WHERE user = 'ADMIN'  -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:13:16] [1]: Consulta: Select * from usuarios WHERE user = '' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:13:16] [1]: Consulta: SELECT DECODE(passcode,'oswego') as contra FROM usuarios WHERE user = 'ADMIN' -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2016/11/14 17:13:16] [1]: Consulta: SELECT Count(*) AS total FROM usuarios WHERE user = 'ADMIN'  -- Error : SQLSTATE[28000] [1045] Access denied for user 'cuntrans_admin'@'localhost' (using password: YES) 
+[2017/10/05 19:49:21] [1]: Consulta: INSERT INTO zonas(`zona`,`costo1ow`,`costo1rt`,`costo2ow`,`costo2rt`,`costo3ow`,`costo3rt`,`costo4ow`,`costo4rt`,`costo5ow`,`costo5rt`,`costo6ow`,`costo6rt`,`costo3ow`,`costo7rt`)
+    VALUES('TEST','1','2','3','4','5','6','7','8','9','10','11','12','13','14') -- Error : SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'costo3ow' specified twice 
+[2017/10/07 23:02:24] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:03:46] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:03:57] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:05:49] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:06:13] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:06:16] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:06:24] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:09:14] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:09:35] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 23:09:35] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:09:41] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 23:10:00] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:11:49] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:12:02] [1]: Consulta: Select tou.recid,
+							tou.tit_esp,
+							tou.status,
+							tou.categoria,
+							tou.featured,
+							tou.top_ten,
+							tou.ubica,
+							des.nombre from tours as tou JOIN destinos as des ON(tou.ubica = des.recid) ORDER BY tou.tit_esp -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:13:45] [1]: Consulta: Select * from tours ORDER BY tou.tit_esp -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tou.tit_esp' in 'order clause' 
+[2017/10/07 18:14:07] [1]: Consulta: Select * from tours ORDER BY tou.tit_esp -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tou.tit_esp' in 'order clause' 
+[2017/10/07 18:14:13] [1]: Consulta: Select * from tours ORDER BY tou.tit_esp -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tou.tit_esp' in 'order clause' 
+[2017/10/07 18:14:25] [1]: Consulta: Select * from tours ORDER BY tou.tit_esp -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tou.tit_esp' in 'order clause' 
+[2017/10/07 18:16:07] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:16:07] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:18:36] [1]: Consulta: Select * from rates WHERE tour_id = '33' ORDER by desde  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tour_id' in 'where clause' 
+[2017/10/07 18:18:44] [1]: Consulta: Select * from tours_schedule where tourid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_schedule' doesn't exist 
+[2017/10/07 18:18:52] [1]: Consulta: Select * from tours_schedule where tourid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_schedule' doesn't exist 
+[2017/10/07 18:19:09] [1]: Consulta: Select * from tours_schedule where tourid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_schedule' doesn't exist 
+[2017/10/07 18:19:22] [1]: Consulta: SELECT COUNT(*) AS total FROM fechas_cerradas where tour_id = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.fechas_cerradas' doesn't exist 
+[2017/10/07 18:19:22] [1]: Consulta: Select * from fechas_cerradas where tour_id = '33' order by fecha ASC -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.fechas_cerradas' doesn't exist 
+[2017/10/07 18:19:30] [1]: Consulta: SELECT COUNT(*) AS total FROM fechas_cerradas where tour_id = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.fechas_cerradas' doesn't exist 
+[2017/10/07 18:19:30] [1]: Consulta: Select * from fechas_cerradas where tour_id = '33' order by fecha ASC -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.fechas_cerradas' doesn't exist 
+[2017/10/07 18:20:41] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:20:41] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:20:46] [1]: Consulta: UPDATE tours SET tit_esp 	  = 'COBA VILLA MAYA',
+							   status 	  = 'A',
+							  categoria   = '--',
+							  ubica       = '--',
+							  featured    = 'N',
+							  depart_es   = 'UNICA SALIDA 10:30 am.',
+							  duration_es = 'De 10:30 am a 5:30 pm  ',
+							  avail_esp   = 'Lunes, Miércoles y Viernes',
+							  video       = '',
+							  desc_esp	  = '<p>Conozca de cerca el M&eacute;xico Real, a trav&eacute;s de una visita al estilo National Geographic, apreciando la arqueolog&iacute;a, arquitectura, cultura fauna y flora silvestre del mundo Maya. Disfrute de un fascinante viaje hist&oacute;rico al sitio arqueol&oacute;gico de Coba donde podr&aacute; ascender a la pir&aacute;mide de mayor altura en toda la pen&iacute;nsula de Yucat&aacute;n.</p>
+',
+							  desc_lar_esp	  = '<p>VISITE UN AUT&Eacute;NTICO PUEBLO MAYA:<br />
+y sea testigo de las tradiciones antiguas y herencia cultural que aun persisten hasta nuestros d&iacute;as, descubra y experimente la sencillez de la manera de vivir del pueblo Maya, un encuentro cautivador que enriquecer&aacute; la manera en que usted ve el mundo.<br />
+<br />
+DMIRE LA BELLEZA NATURAL DE UN CENOTE:<br />
+y de la selva tropical que lo rodea mientras disfruta nadando en sus refrescantes aguas claras.</p>
+',
+							  inc_esp	  = '<ul>
+	<li>Transportaci&oacute;n a Cob&aacute; desde y hacia su hotel en Canc&uacute;n.</li>
+	<li>Entradas al sitio arqueol&oacute;gico de Cob&aacute;</li>
+	<li>Tour guiado en el sitio arqueol&oacute;gico por dos horas y media.</li>
+	<li>Toallas refrescantes en el sitio arqueol&oacute;gico</li>
+	<li>Comida buffet con men&uacute; estilo Yucateco, con ensaladas, platos fuertes (de pollo, res y pescado) y postre</li>
+	<li>Entrada a los cenotes</li>
+</ul>
+',
+							  noinc_esp	  = '<ul>
+	<li>Bebidas (durante el tour o el almuerzo)</li>
+	<li>Souvenirs / recuerdos</li>
+	<li>Propinas para los gu&iacute;as</li>
+	<li>Comidas adicionales no mencionadas.</li>
+</ul>
+',
+							  adinfo_esp	  = '<ul>
+	<li>Los horarios de recogida y regreso var&iacute;an dependiendo de la ubicaci&oacute;n de su hotel en Canc&uacute;n.</li>
+	<li>Las recogidas comienzan a las 7am y hasta las 8:15am. Uno de nuestros representantes se pondr&aacute; en contacto con usted para proveerle el tiempo exacto de recogida para su tour.</li>
+	<li>Nuestro transporte hacia Cob&aacute; es en autobuses o vans de reciente modelo y aire acondicionado.</li>
+	<li>Los menores de edad se consideran de los 5 a los 12 a&ntilde;os de edad</li>
+</ul>
+
+<p><b>Informaci&oacute;n Importante: </b><br />
+Cob&aacute; es uno de los tesoros escondidos de la Riviera Maya, a lo largo de la cual existen numerosos vestigios de la gran cultura maya, que habit&oacute; este territorio en la antig&uuml;edad. La pir&aacute;mide Nohoch-Mul (&ldquo;nohoch&rdquo; significa grande, y &ldquo;mul&rdquo; altura, en lengua maya) es la m&aacute;s alta de Quintana Roo y de toda la pen&iacute;nsula de Yucat&aacute;n y mide aproximadamente 42 metros. El sitio est&aacute; rodeado de numerosas lagunas y caminos blancos, llamados en maya &ldquo;sac-b&eacute;s&rdquo;.<br />
+<br />
+<b>Consejos y recomendaciones</b></p>
+
+<ul>
+	<li>Trae protector solar y lentes de sol; recuerda utilizar protector solar biodegradable, queremos proteger a la fauna de la regi&oacute;n de los qu&iacute;micos utilizados en protector solar regular. Recuerda que este tambi&eacute;n es tu planeta y debes cuidarlo!</li>
+	<li>Recomendamos que traigas un su&eacute;ter ligero pues podr&iacute;a darte frio en el autobus de camino a Cob&aacute;.</li>
+	<li>Usa zapatos de caminar o tenis deportivos, no recomendamos sandalias para el sitio arqueol&oacute;gico.</li>
+	<li>No olvides tu traje de ba&ntilde;o, toalla y un sombrero o gorra.</li>
+	<li>Por favor no olvides traer tu c&aacute;mara!</li>
+	<li>No traigas tripi&eacute; para la c&aacute;mara, no est&aacute; permitido meterlos al sitio arqueol&oacute;gico.</li>
+	<li>Si traes una c&aacute;mara de video hay una cuota extra que deber&aacute; ser pagada en la entrada de Cob&aacute;</li>
+</ul>
+',
+							 
+							  desc_ing	      = '<p>Climbing the Nohoch Muul temple (the tallest pyramid of the state), you will be able admire the pristine beauty and immeasurable vastness of the surrounding sub-tropical rain forest. Your Maya Encounter journey then leads you to an authentic Maya village, a self-sufficient Maya community living next to an integral part of the region&#39;s lagoon system. You will walk you through the Maya community&#39;s forest, learning the mysteries of their local fauna and flora. Your unforgettable off-track adventure tour then begins: exciting zip-line flying over an incredibly beautiful Cenote, a refreshing swim, rappelling down into another Cenote, and canoe paddling on a lagoon of enormous beauty. And to end it all, a delicious traditional lunch prepared by the women of this Maya community</p>
+',
+							  desc_lar_ing	  = '<p>Climbing the Nohoch Muul temple (the tallest pyramid of the state), you will be able admire the pristine beauty and immeasurable vastness of the surrounding sub-tropical rain forest. Your Maya Encounter journey then leads you to an authentic Maya village, a self-sufficient Maya community living next to an integral part of the region&#39;s lagoon system. You will walk you through the Maya community&#39;s forest, learning the mysteries of their local fauna and flora. Your unforgettable off-track adventure tour then begins: exciting zip-line flying over an incredibly beautiful Cenote, a refreshing swim, rappelling down into another Cenote, and canoe paddling on a lagoon of enormous beauty. And to end it all, a delicious traditional lunch prepared by the women of this Maya community</p>
+',
+							  inc_ing   	  = '<ul>
+	<li>Transportation from and to your hotel in Canc&uacute;n to Cob&aacute;</li>
+	<li>Admission to the archaeological site of Cob&aacute;</li>
+	<li>Certified English-speaking tour guide at the ruins.</li>
+	<li>Refreshing towels in Cob&aacute;.</li>
+	<li>Buffet lunch with regional Yucatecan dishes.</li>
+	<li>Admission to the sinkholes (cenotes).</li>
+</ul>
+',
+							  noinc_ing	      = '<ul>
+	<li>Any drinks (during the tour and/or lunch)</li>
+	<li>Souvenirs</li>
+	<li>Gratuities for the tour guides</li>
+	<li>Additional meals not mentioned.</li>
+</ul>
+',
+							  adinfo_ing	  = '<ul>
+	<li>Pick up and drop off schedules may vary depending on the location of your hotel in Canc&uacute;n.</li>
+	<li>Pick-ups start at 7am and until 8:15am. One of our representatives will contact you to provide exact pick up time for your tour.</li>
+	<li>We drive to Cob&aacute; on air-conditioned recent model buses or vans.</li>
+	<li>We split our groups into speaking language for your comfort.</li>
+	<li>Children are from 5 to 12 years of age.</li>
+</ul>
+',
+							  top_ten   	  = '',
+							  tit_ing		  = 'COBA MAYAN  VILLAGE',
+							  depart_ing	  = 'One departure only  10:30 am.',
+							  duration_ing    = '10:30 am and returning at 5:30 pm ',
+							  avail_ing       = 'Monday, Wednesday & Friday'     WHERE recid = '40'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'top_ten' in 'field list' 
+[2017/10/07 18:20:52] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:20:52] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:20:55] [1]: Consulta: UPDATE tours SET tit_esp 	  = 'COBA VILLA MAYA',
+							   status 	  = 'A',
+							  categoria   = '--',
+							  ubica       = '--',
+							  featured    = 'N',
+							  depart_es   = 'UNICA SALIDA 10:30 am.',
+							  duration_es = 'De 10:30 am a 5:30 pm  ',
+							  avail_esp   = 'Lunes, Miércoles y Viernes',
+							  video       = '',
+							  desc_esp	  = '<p>Conozca de cerca el M&eacute;xico Real, a trav&eacute;s de una visita al estilo National Geographic, apreciando la arqueolog&iacute;a, arquitectura, cultura fauna y flora silvestre del mundo Maya. Disfrute de un fascinante viaje hist&oacute;rico al sitio arqueol&oacute;gico de Coba donde podr&aacute; ascender a la pir&aacute;mide de mayor altura en toda la pen&iacute;nsula de Yucat&aacute;n.</p>
+',
+							  desc_lar_esp	  = '<p>VISITE UN AUT&Eacute;NTICO PUEBLO MAYA:<br />
+y sea testigo de las tradiciones antiguas y herencia cultural que aun persisten hasta nuestros d&iacute;as, descubra y experimente la sencillez de la manera de vivir del pueblo Maya, un encuentro cautivador que enriquecer&aacute; la manera en que usted ve el mundo.<br />
+<br />
+DMIRE LA BELLEZA NATURAL DE UN CENOTE:<br />
+y de la selva tropical que lo rodea mientras disfruta nadando en sus refrescantes aguas claras.</p>
+',
+							  inc_esp	  = '<ul>
+	<li>Transportaci&oacute;n a Cob&aacute; desde y hacia su hotel en Canc&uacute;n.</li>
+	<li>Entradas al sitio arqueol&oacute;gico de Cob&aacute;</li>
+	<li>Tour guiado en el sitio arqueol&oacute;gico por dos horas y media.</li>
+	<li>Toallas refrescantes en el sitio arqueol&oacute;gico</li>
+	<li>Comida buffet con men&uacute; estilo Yucateco, con ensaladas, platos fuertes (de pollo, res y pescado) y postre</li>
+	<li>Entrada a los cenotes</li>
+</ul>
+',
+							  noinc_esp	  = '<ul>
+	<li>Bebidas (durante el tour o el almuerzo)</li>
+	<li>Souvenirs / recuerdos</li>
+	<li>Propinas para los gu&iacute;as</li>
+	<li>Comidas adicionales no mencionadas.</li>
+</ul>
+',
+							  adinfo_esp	  = '<ul>
+	<li>Los horarios de recogida y regreso var&iacute;an dependiendo de la ubicaci&oacute;n de su hotel en Canc&uacute;n.</li>
+	<li>Las recogidas comienzan a las 7am y hasta las 8:15am. Uno de nuestros representantes se pondr&aacute; en contacto con usted para proveerle el tiempo exacto de recogida para su tour.</li>
+	<li>Nuestro transporte hacia Cob&aacute; es en autobuses o vans de reciente modelo y aire acondicionado.</li>
+	<li>Los menores de edad se consideran de los 5 a los 12 a&ntilde;os de edad</li>
+</ul>
+
+<p><b>Informaci&oacute;n Importante: </b><br />
+Cob&aacute; es uno de los tesoros escondidos de la Riviera Maya, a lo largo de la cual existen numerosos vestigios de la gran cultura maya, que habit&oacute; este territorio en la antig&uuml;edad. La pir&aacute;mide Nohoch-Mul (&ldquo;nohoch&rdquo; significa grande, y &ldquo;mul&rdquo; altura, en lengua maya) es la m&aacute;s alta de Quintana Roo y de toda la pen&iacute;nsula de Yucat&aacute;n y mide aproximadamente 42 metros. El sitio est&aacute; rodeado de numerosas lagunas y caminos blancos, llamados en maya &ldquo;sac-b&eacute;s&rdquo;.<br />
+<br />
+<b>Consejos y recomendaciones</b></p>
+
+<ul>
+	<li>Trae protector solar y lentes de sol; recuerda utilizar protector solar biodegradable, queremos proteger a la fauna de la regi&oacute;n de los qu&iacute;micos utilizados en protector solar regular. Recuerda que este tambi&eacute;n es tu planeta y debes cuidarlo!</li>
+	<li>Recomendamos que traigas un su&eacute;ter ligero pues podr&iacute;a darte frio en el autobus de camino a Cob&aacute;.</li>
+	<li>Usa zapatos de caminar o tenis deportivos, no recomendamos sandalias para el sitio arqueol&oacute;gico.</li>
+	<li>No olvides tu traje de ba&ntilde;o, toalla y un sombrero o gorra.</li>
+	<li>Por favor no olvides traer tu c&aacute;mara!</li>
+	<li>No traigas tripi&eacute; para la c&aacute;mara, no est&aacute; permitido meterlos al sitio arqueol&oacute;gico.</li>
+	<li>Si traes una c&aacute;mara de video hay una cuota extra que deber&aacute; ser pagada en la entrada de Cob&aacute;</li>
+</ul>
+',
+							 
+							  desc_ing	      = '<p>Climbing the Nohoch Muul temple (the tallest pyramid of the state), you will be able admire the pristine beauty and immeasurable vastness of the surrounding sub-tropical rain forest. Your Maya Encounter journey then leads you to an authentic Maya village, a self-sufficient Maya community living next to an integral part of the region&#39;s lagoon system. You will walk you through the Maya community&#39;s forest, learning the mysteries of their local fauna and flora. Your unforgettable off-track adventure tour then begins: exciting zip-line flying over an incredibly beautiful Cenote, a refreshing swim, rappelling down into another Cenote, and canoe paddling on a lagoon of enormous beauty. And to end it all, a delicious traditional lunch prepared by the women of this Maya community</p>
+',
+							  desc_lar_ing	  = '<p>Climbing the Nohoch Muul temple (the tallest pyramid of the state), you will be able admire the pristine beauty and immeasurable vastness of the surrounding sub-tropical rain forest. Your Maya Encounter journey then leads you to an authentic Maya village, a self-sufficient Maya community living next to an integral part of the region&#39;s lagoon system. You will walk you through the Maya community&#39;s forest, learning the mysteries of their local fauna and flora. Your unforgettable off-track adventure tour then begins: exciting zip-line flying over an incredibly beautiful Cenote, a refreshing swim, rappelling down into another Cenote, and canoe paddling on a lagoon of enormous beauty. And to end it all, a delicious traditional lunch prepared by the women of this Maya community</p>
+',
+							  inc_ing   	  = '<ul>
+	<li>Transportation from and to your hotel in Canc&uacute;n to Cob&aacute;</li>
+	<li>Admission to the archaeological site of Cob&aacute;</li>
+	<li>Certified English-speaking tour guide at the ruins.</li>
+	<li>Refreshing towels in Cob&aacute;.</li>
+	<li>Buffet lunch with regional Yucatecan dishes.</li>
+	<li>Admission to the sinkholes (cenotes).</li>
+</ul>
+',
+							  noinc_ing	      = '<ul>
+	<li>Any drinks (during the tour and/or lunch)</li>
+	<li>Souvenirs</li>
+	<li>Gratuities for the tour guides</li>
+	<li>Additional meals not mentioned.</li>
+</ul>
+',
+							  adinfo_ing	  = '<ul>
+	<li>Pick up and drop off schedules may vary depending on the location of your hotel in Canc&uacute;n.</li>
+	<li>Pick-ups start at 7am and until 8:15am. One of our representatives will contact you to provide exact pick up time for your tour.</li>
+	<li>We drive to Cob&aacute; on air-conditioned recent model buses or vans.</li>
+	<li>We split our groups into speaking language for your comfort.</li>
+	<li>Children are from 5 to 12 years of age.</li>
+</ul>
+',
+							  top_ten   	  = '',
+							  tit_ing		  = 'COBA MAYAN  VILLAGE',
+							  depart_ing	  = 'One departure only  10:30 am.',
+							  duration_ing    = '10:30 am and returning at 5:30 pm ',
+							  avail_ing       = 'Monday, Wednesday & Friday'     WHERE recid = '40'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'top_ten' in 'field list' 
+[2017/10/07 18:21:46] [1]: Consulta: UPDATE tours SET tit_esp 	  = 'COBA VILLA MAYA',
+							   status 	  = 'A',
+							  categoria   = '--',
+							  ubica       = '--',
+							  featured    = 'N',
+							  depart_es   = 'UNICA SALIDA 10:30 am.',
+							  duration_es = 'De 10:30 am a 5:30 pm  ',
+							  avail_esp   = 'Lunes, Miércoles y Viernes',
+							  video       = '',
+							  desc_esp	  = '<p>Conozca de cerca el M&eacute;xico Real, a trav&eacute;s de una visita al estilo National Geographic, apreciando la arqueolog&iacute;a, arquitectura, cultura fauna y flora silvestre del mundo Maya. Disfrute de un fascinante viaje hist&oacute;rico al sitio arqueol&oacute;gico de Coba donde podr&aacute; ascender a la pir&aacute;mide de mayor altura en toda la pen&iacute;nsula de Yucat&aacute;n.</p>
+',
+							  desc_lar_esp	  = '<p>VISITE UN AUT&Eacute;NTICO PUEBLO MAYA:<br />
+y sea testigo de las tradiciones antiguas y herencia cultural que aun persisten hasta nuestros d&iacute;as, descubra y experimente la sencillez de la manera de vivir del pueblo Maya, un encuentro cautivador que enriquecer&aacute; la manera en que usted ve el mundo.<br />
+<br />
+DMIRE LA BELLEZA NATURAL DE UN CENOTE:<br />
+y de la selva tropical que lo rodea mientras disfruta nadando en sus refrescantes aguas claras.</p>
+',
+							  inc_esp	  = '<ul>
+	<li>Transportaci&oacute;n a Cob&aacute; desde y hacia su hotel en Canc&uacute;n.</li>
+	<li>Entradas al sitio arqueol&oacute;gico de Cob&aacute;</li>
+	<li>Tour guiado en el sitio arqueol&oacute;gico por dos horas y media.</li>
+	<li>Toallas refrescantes en el sitio arqueol&oacute;gico</li>
+	<li>Comida buffet con men&uacute; estilo Yucateco, con ensaladas, platos fuertes (de pollo, res y pescado) y postre</li>
+	<li>Entrada a los cenotes</li>
+</ul>
+',
+							  noinc_esp	  = '<ul>
+	<li>Bebidas (durante el tour o el almuerzo)</li>
+	<li>Souvenirs / recuerdos</li>
+	<li>Propinas para los gu&iacute;as</li>
+	<li>Comidas adicionales no mencionadas.</li>
+</ul>
+',
+							  adinfo_esp	  = '<ul>
+	<li>Los horarios de recogida y regreso var&iacute;an dependiendo de la ubicaci&oacute;n de su hotel en Canc&uacute;n.</li>
+	<li>Las recogidas comienzan a las 7am y hasta las 8:15am. Uno de nuestros representantes se pondr&aacute; en contacto con usted para proveerle el tiempo exacto de recogida para su tour.</li>
+	<li>Nuestro transporte hacia Cob&aacute; es en autobuses o vans de reciente modelo y aire acondicionado.</li>
+	<li>Los menores de edad se consideran de los 5 a los 12 a&ntilde;os de edad</li>
+</ul>
+
+<p><b>Informaci&oacute;n Importante: </b><br />
+Cob&aacute; es uno de los tesoros escondidos de la Riviera Maya, a lo largo de la cual existen numerosos vestigios de la gran cultura maya, que habit&oacute; este territorio en la antig&uuml;edad. La pir&aacute;mide Nohoch-Mul (&ldquo;nohoch&rdquo; significa grande, y &ldquo;mul&rdquo; altura, en lengua maya) es la m&aacute;s alta de Quintana Roo y de toda la pen&iacute;nsula de Yucat&aacute;n y mide aproximadamente 42 metros. El sitio est&aacute; rodeado de numerosas lagunas y caminos blancos, llamados en maya &ldquo;sac-b&eacute;s&rdquo;.<br />
+<br />
+<b>Consejos y recomendaciones</b></p>
+
+<ul>
+	<li>Trae protector solar y lentes de sol; recuerda utilizar protector solar biodegradable, queremos proteger a la fauna de la regi&oacute;n de los qu&iacute;micos utilizados en protector solar regular. Recuerda que este tambi&eacute;n es tu planeta y debes cuidarlo!</li>
+	<li>Recomendamos que traigas un su&eacute;ter ligero pues podr&iacute;a darte frio en el autobus de camino a Cob&aacute;.</li>
+	<li>Usa zapatos de caminar o tenis deportivos, no recomendamos sandalias para el sitio arqueol&oacute;gico.</li>
+	<li>No olvides tu traje de ba&ntilde;o, toalla y un sombrero o gorra.</li>
+	<li>Por favor no olvides traer tu c&aacute;mara!</li>
+	<li>No traigas tripi&eacute; para la c&aacute;mara, no est&aacute; permitido meterlos al sitio arqueol&oacute;gico.</li>
+	<li>Si traes una c&aacute;mara de video hay una cuota extra que deber&aacute; ser pagada en la entrada de Cob&aacute;</li>
+</ul>
+',
+							 
+							  desc_ing	      = '<p>Climbing the Nohoch Muul temple (the tallest pyramid of the state), you will be able admire the pristine beauty and immeasurable vastness of the surrounding sub-tropical rain forest. Your Maya Encounter journey then leads you to an authentic Maya village, a self-sufficient Maya community living next to an integral part of the region&#39;s lagoon system. You will walk you through the Maya community&#39;s forest, learning the mysteries of their local fauna and flora. Your unforgettable off-track adventure tour then begins: exciting zip-line flying over an incredibly beautiful Cenote, a refreshing swim, rappelling down into another Cenote, and canoe paddling on a lagoon of enormous beauty. And to end it all, a delicious traditional lunch prepared by the women of this Maya community</p>
+',
+							  desc_lar_ing	  = '<p>Climbing the Nohoch Muul temple (the tallest pyramid of the state), you will be able admire the pristine beauty and immeasurable vastness of the surrounding sub-tropical rain forest. Your Maya Encounter journey then leads you to an authentic Maya village, a self-sufficient Maya community living next to an integral part of the region&#39;s lagoon system. You will walk you through the Maya community&#39;s forest, learning the mysteries of their local fauna and flora. Your unforgettable off-track adventure tour then begins: exciting zip-line flying over an incredibly beautiful Cenote, a refreshing swim, rappelling down into another Cenote, and canoe paddling on a lagoon of enormous beauty. And to end it all, a delicious traditional lunch prepared by the women of this Maya community</p>
+',
+							  inc_ing   	  = '<ul>
+	<li>Transportation from and to your hotel in Canc&uacute;n to Cob&aacute;</li>
+	<li>Admission to the archaeological site of Cob&aacute;</li>
+	<li>Certified English-speaking tour guide at the ruins.</li>
+	<li>Refreshing towels in Cob&aacute;.</li>
+	<li>Buffet lunch with regional Yucatecan dishes.</li>
+	<li>Admission to the sinkholes (cenotes).</li>
+</ul>
+',
+							  noinc_ing	      = '<ul>
+	<li>Any drinks (during the tour and/or lunch)</li>
+	<li>Souvenirs</li>
+	<li>Gratuities for the tour guides</li>
+	<li>Additional meals not mentioned.</li>
+</ul>
+',
+							  adinfo_ing	  = '<ul>
+	<li>Pick up and drop off schedules may vary depending on the location of your hotel in Canc&uacute;n.</li>
+	<li>Pick-ups start at 7am and until 8:15am. One of our representatives will contact you to provide exact pick up time for your tour.</li>
+	<li>We drive to Cob&aacute; on air-conditioned recent model buses or vans.</li>
+	<li>We split our groups into speaking language for your comfort.</li>
+	<li>Children are from 5 to 12 years of age.</li>
+</ul>
+',
+							  top_ten   	  = '',
+							  tit_ing		  = 'COBA MAYAN  VILLAGE',
+							  depart_ing	  = 'One departure only  10:30 am.',
+							  duration_ing    = '10:30 am and returning at 5:30 pm ',
+							  avail_ing       = 'Monday, Wednesday & Friday'     WHERE recid = '40'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'top_ten' in 'field list' 
+[2017/10/07 18:23:22] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:23:22] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:23:31] [1]: Consulta: UPDATE tours SET tit_esp 	  = 'CATAMARAN DANCER',
+							   status 	  = 'A',
+							  categoria   = '--',
+							  ubica       = '--',
+							  featured    = 'Y',
+							  depart_es   = 'UNICA SALIDA 10:30 am.',
+							  duration_es = 'De 10:30 am a 5:30 pm  ',
+							  avail_esp   = 'Salidas de Lunes a Sábado ',
+							  video       = '',
+							  desc_esp	  = '<div>
+<div>Nuestra embarcaci&oacute;n cuenta con: 3 niveles&nbsp;</div>
+
+<div>En el primer nivel bar, cabina de sonido, ba&ntilde;os, trampol&iacute;n y alberca (delimitada con boyas en el mar)&nbsp;En el segundo nivel camastros, obog&aacute;n, &aacute;rea techada, pantalla y audio&nbsp;En el tercer nivel &nbsp;podr&aacute; disfrutar de una hermosa vista y sacar las mejores fotograf&iacute;as</div>
+</div>
+',
+							  desc_lar_esp	  = '<p>1er parada del barco :&nbsp; Visita a las ruinas del Meco , visita guiada con duraci&oacute;n de 40 minutos, los clientes que no quieran bajar podr&aacute;n permanecer a bordo del barco con clases de salsa o podr&aacute;n permanecer en los camastros en el segundo nivel con m&uacute;sica m&aacute;s tranquila.<br />
+2da. Parada del barco:&nbsp; Actividad del Snorkel en el arrecife del meco. Tambi&eacute;n se colocar&aacute; un trampol&iacute;n y boyas en el mar para delimitar una alberca y la gente que regrese del snorkel o que no quiera hacer la actividad, pueda nadar y lanzarse del mismo o disfrutar de nuestro tobog&aacute;n desde el segundo nivel<br />
+3er. Parada del barco: Visita a Isla Mujeres 2 horas libres&nbsp; Tiempo libre para visitar playa norte, rentar carrito de golf o ir de compras Al abordar, se organizar&aacute; la fiesta con el DJ en vivo</p>
+',
+							  inc_esp	  = '<p class="MsoNormal" style="margin-bottom: 0.0001pt; "><span lang="es" style="font-size:10.0pt;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:#000A">Barra libre nacional: ron, tequila, vodka, cerveza, cocteles, refrescos y jugos.&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; ">&nbsp;</p>
+
+<ul>
+	<li>Desayuno continental: pan dulce, leche, jugos y caf&eacute;.</li>
+	<li>Comida abordo: fajitas de arrachera, fajitas de pollo, ensalada, arroz, guacamole. ( preparada al momento por nuestro chef)</li>
+	<li>Trampol&iacute;n, tobog&aacute;n&nbsp; y camastros abordo&nbsp;&nbsp;</li>
+	<li>Ba&ntilde;os amplios y c&oacute;modos</li>
+</ul>
+
+<p>&nbsp;</p>
+',
+							  noinc_esp	  = '<ul>
+	<li>$ 7 USD de impuestos de muelle para conservaci&oacute;n de arrecifes.</li>
+	<li>Propinas</li>
+	<li>Transportaci&oacute;n a su hotel</li>
+	<li>Renta de carrito de golf en Isla Mujeres (traer licencia).&nbsp;</li>
+	<li>Sugerimos traer toallas, abordo solo a la venta.&nbsp;</li>
+</ul>
+',
+							  adinfo_esp	  = '<p><b>Informaci&oacute;n adicional:</b></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Recibir&aacute; confirmaci&oacute;n en el momento de efectuar la reservaci&oacute;n.</li>
+	<li>Entradas gratuitas y sujetas a disponibilidad para ni&ntilde;os menores de 3 a&ntilde;os.</li>
+	<li>Con acceso para sillas de ruedas.</li>
+</ul>
+
+<p><b>Qu&eacute; debe traer:</b></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Se recomienda llevar ropa ligera</li>
+	<li>Buen calzado para caminar o zapatillas de deporte</li>
+	<li>Sombrero o gorra</li>
+	<li>Lentes para el sol</li>
+	<li>Protector solar biodegradable</li>
+	<li>Traje de ba&ntilde;o y una toalla</li>
+	<li>Ropa extra para cambiarse</li>
+</ul>
+',
+							 
+							  desc_ing	      = '<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span lang="EN-US" mso-fareast-language:="" new="" style="font-size:9.0pt;line-height:
+115%;font-family:" times="">Awesome &nbsp;catamaran with &nbsp;3 floors of Fun, Entertainment and a delicious cooked on board meal and open bar.Lounge chairs, water-slide, roofed area, flat-screen TV and audio system.Large, clean and comfortable restrooms for men and women.&nbsp;</span></p>
+
+<p>&nbsp;</p>
+',
+							  desc_lar_ing	  = '<p>Catamaran&rsquo;s 1st stop: Visit the Maya Meco ruins with a 40 minute guided tour 2nd stop: Snorkel in Meco&rsquo;s reef with guides. Thee is also an area enclosed with buoys in the ocean that you can dive into from the diving board. Or, you can slide down the two story slide into the ocean. 3rd stop: Visit Isla Mujeres for two hours. You can walk around the various shops or rent a golf cart or scooter. &bull; Back on board on the return to Cancun you can have fun on the first floor with live entertainment and a live DJ.</p>
+',
+							  inc_ing   	  = '<ul>
+	<li>Open bar (domestic drinks): rum, tequila, vodka, beer, cocktails, sodas and juices.</li>
+	<li>Continental breakfast: various breads, milk, juices and coffee.</li>
+	<li>Lunch: beef and chicken fajitas, salad, rice, chips and guacamole (everything is freshly prepared and cooked on board).</li>
+	<li>Diving board, water slide, snorkeling gear and lounge chairs on board.</li>
+	<li>Large, clean and comfortable restrooms for men and women.</li>
+</ul>
+',
+							  noinc_ing	      = '<ul>
+	<li>$ 7 USD reef preservation tax and dock fee</li>
+	<li>You may rent a golf cart or scooter on the island (license required) from a third party for a fee.We recommend that you bring towels. However, we do have them for sale on board. We have pictures of the trip available at the end on CD or photo paper for a fee.</li>
+</ul>
+',
+							  adinfo_ing	  = '<p>With seven hours and three stops, this activity-filled catamaran cruise from Cancun offers something for everyone in your party, from snorkeling to dancing! Board the catamaran and start your day with a continental breakfast of pastries, freshly brewed coffee, milk and juice before making your first stop at the Maya Meco ruins. You have the option to take the included 40-minute guided tour of the Mayan ruins or stay on the catamaran, where you can take a salsa dancing lesson or simply relax and soak in the rays.</p>
+',
+							  top_ten   	  = '',
+							  tit_ing		  = 'DANCER CRUISE ',
+							  depart_ing	  = 'One departure only  10:30 am.',
+							  duration_ing    = '10:30 am and returning at 5:30 pm ',
+							  avail_ing       = 'Departing Monday to Saturday '     WHERE recid = '33'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'top_ten' in 'field list' 
+[2017/10/07 18:23:57] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:23:57] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:24:03] [1]: Consulta: UPDATE tours SET tit_esp 	  = 'CATAMARAN DANCER 1',
+							   status 	  = 'A',
+							  categoria   = '--',
+							  ubica       = '--',
+							  featured    = 'Y',
+							  depart_es   = 'UNICA SALIDA 10:30 am.',
+							  duration_es = 'De 10:30 am a 5:30 pm  ',
+							  avail_esp   = 'Salidas de Lunes a Sábado ',
+							  video       = '',
+							  desc_esp	  = '<div>
+<div>Nuestra embarcaci&oacute;n cuenta con: 3 niveles&nbsp;</div>
+
+<div>En el primer nivel bar, cabina de sonido, ba&ntilde;os, trampol&iacute;n y alberca (delimitada con boyas en el mar)&nbsp;En el segundo nivel camastros, obog&aacute;n, &aacute;rea techada, pantalla y audio&nbsp;En el tercer nivel &nbsp;podr&aacute; disfrutar de una hermosa vista y sacar las mejores fotograf&iacute;as</div>
+</div>
+',
+							  desc_lar_esp	  = '<p>1er parada del barco :&nbsp; Visita a las ruinas del Meco , visita guiada con duraci&oacute;n de 40 minutos, los clientes que no quieran bajar podr&aacute;n permanecer a bordo del barco con clases de salsa o podr&aacute;n permanecer en los camastros en el segundo nivel con m&uacute;sica m&aacute;s tranquila.<br />
+2da. Parada del barco:&nbsp; Actividad del Snorkel en el arrecife del meco. Tambi&eacute;n se colocar&aacute; un trampol&iacute;n y boyas en el mar para delimitar una alberca y la gente que regrese del snorkel o que no quiera hacer la actividad, pueda nadar y lanzarse del mismo o disfrutar de nuestro tobog&aacute;n desde el segundo nivel<br />
+3er. Parada del barco: Visita a Isla Mujeres 2 horas libres&nbsp; Tiempo libre para visitar playa norte, rentar carrito de golf o ir de compras Al abordar, se organizar&aacute; la fiesta con el DJ en vivo</p>
+',
+							  inc_esp	  = '<p class="MsoNormal" style="margin-bottom: 0.0001pt; "><span lang="es" style="font-size:10.0pt;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:#000A">Barra libre nacional: ron, tequila, vodka, cerveza, cocteles, refrescos y jugos.&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; ">&nbsp;</p>
+
+<ul>
+	<li>Desayuno continental: pan dulce, leche, jugos y caf&eacute;.</li>
+	<li>Comida abordo: fajitas de arrachera, fajitas de pollo, ensalada, arroz, guacamole. ( preparada al momento por nuestro chef)</li>
+	<li>Trampol&iacute;n, tobog&aacute;n&nbsp; y camastros abordo&nbsp;&nbsp;</li>
+	<li>Ba&ntilde;os amplios y c&oacute;modos</li>
+</ul>
+
+<p>&nbsp;</p>
+',
+							  noinc_esp	  = '<ul>
+	<li>$ 7 USD de impuestos de muelle para conservaci&oacute;n de arrecifes.</li>
+	<li>Propinas</li>
+	<li>Transportaci&oacute;n a su hotel</li>
+	<li>Renta de carrito de golf en Isla Mujeres (traer licencia).&nbsp;</li>
+	<li>Sugerimos traer toallas, abordo solo a la venta.&nbsp;</li>
+</ul>
+',
+							  adinfo_esp	  = '<p><b>Informaci&oacute;n adicional:</b></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Recibir&aacute; confirmaci&oacute;n en el momento de efectuar la reservaci&oacute;n.</li>
+	<li>Entradas gratuitas y sujetas a disponibilidad para ni&ntilde;os menores de 3 a&ntilde;os.</li>
+	<li>Con acceso para sillas de ruedas.</li>
+</ul>
+
+<p><b>Qu&eacute; debe traer:</b></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Se recomienda llevar ropa ligera</li>
+	<li>Buen calzado para caminar o zapatillas de deporte</li>
+	<li>Sombrero o gorra</li>
+	<li>Lentes para el sol</li>
+	<li>Protector solar biodegradable</li>
+	<li>Traje de ba&ntilde;o y una toalla</li>
+	<li>Ropa extra para cambiarse</li>
+</ul>
+',
+							 
+							  desc_ing	      = '<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span lang="EN-US" mso-fareast-language:="" new="" style="font-size:9.0pt;line-height:
+115%;font-family:" times="">Awesome &nbsp;catamaran with &nbsp;3 floors of Fun, Entertainment and a delicious cooked on board meal and open bar.Lounge chairs, water-slide, roofed area, flat-screen TV and audio system.Large, clean and comfortable restrooms for men and women.&nbsp;</span></p>
+
+<p>&nbsp;</p>
+',
+							  desc_lar_ing	  = '<p>Catamaran&rsquo;s 1st stop: Visit the Maya Meco ruins with a 40 minute guided tour 2nd stop: Snorkel in Meco&rsquo;s reef with guides. Thee is also an area enclosed with buoys in the ocean that you can dive into from the diving board. Or, you can slide down the two story slide into the ocean. 3rd stop: Visit Isla Mujeres for two hours. You can walk around the various shops or rent a golf cart or scooter. &bull; Back on board on the return to Cancun you can have fun on the first floor with live entertainment and a live DJ.</p>
+',
+							  inc_ing   	  = '<ul>
+	<li>Open bar (domestic drinks): rum, tequila, vodka, beer, cocktails, sodas and juices.</li>
+	<li>Continental breakfast: various breads, milk, juices and coffee.</li>
+	<li>Lunch: beef and chicken fajitas, salad, rice, chips and guacamole (everything is freshly prepared and cooked on board).</li>
+	<li>Diving board, water slide, snorkeling gear and lounge chairs on board.</li>
+	<li>Large, clean and comfortable restrooms for men and women.</li>
+</ul>
+',
+							  noinc_ing	      = '<ul>
+	<li>$ 7 USD reef preservation tax and dock fee</li>
+	<li>You may rent a golf cart or scooter on the island (license required) from a third party for a fee.We recommend that you bring towels. However, we do have them for sale on board. We have pictures of the trip available at the end on CD or photo paper for a fee.</li>
+</ul>
+',
+							  adinfo_ing	  = '<p>With seven hours and three stops, this activity-filled catamaran cruise from Cancun offers something for everyone in your party, from snorkeling to dancing! Board the catamaran and start your day with a continental breakfast of pastries, freshly brewed coffee, milk and juice before making your first stop at the Maya Meco ruins. You have the option to take the included 40-minute guided tour of the Mayan ruins or stay on the catamaran, where you can take a salsa dancing lesson or simply relax and soak in the rays.</p>
+',
+							  top_ten   	  = '',
+							  tit_ing		  = 'DANCER CRUISE ',
+							  depart_ing	  = 'One departure only  10:30 am.',
+							  duration_ing    = '10:30 am and returning at 5:30 pm ',
+							  avail_ing       = 'Departing Monday to Saturday '     WHERE recid = '33'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'top_ten' in 'field list' 
+[2017/10/07 18:26:55] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:26:55] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:27:05] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:27:05] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:27:17] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:27:17] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:27:24] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:27:24] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:27:32] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:27:32] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:27:45] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:27:45] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:28:17] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:28:17] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 18:30:26] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 18:30:26] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.destinos' doesn't exist 
+[2017/10/07 19:38:59] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 20:07:00] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/07 20:07:03] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/07 20:07:22] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 20:08:31] [1]: Consulta: INSERT INTO tours(`tit_esp`,`status`,`categoria`,`ubica`,`featured`,`depart_es`,`duration_es`,`avail_esp`,`video`,`desc_esp`,`desc_lar_esp`,`inc_esp`,
+	`noinc_esp`,`adinfo_esp`,`desc_ing`,`desc_lar_ing`,`inc_ing`,`noinc_ing`,`adinfo_ing`,`top_ten`)
+    VALUES('TEST 1','P','--','1','Y','1111','2222','333','4444','<p>5555</p>
+',
+    '<p>66666</p>
+','<p>77777</p>
+','<p>88888</p>
+','<p>99999</p>
+','<p>10101010</p>
+','<p>1111111</p>
+','<p>12121212</p>
+','<p>13131313</p>
+','<p>141414</p>
+','Y') -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'top_ten' in 'field list' 
+[2017/10/07 20:09:39] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 20:09:48] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 20:20:45] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_cat' doesn't exist 
+[2017/10/07 20:22:28] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/07 22:19:06] [1]: Consulta: Select * from tours_fotos WHERE tourid = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_fotos' doesn't exist 
+[2017/10/07 22:19:30] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/07 23:16:33] [1]: Consulta: Select * from tours_fotos WHERE tourid = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_fotos' doesn't exist 
+[2017/10/07 23:20:28] [1]: Consulta: Select * from tours_pics WHERE tourid = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_pics' doesn't exist 
+[2017/10/07 23:20:56] [1]: Consulta: Select * from tours_pics WHERE tourid = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_pics' doesn't exist 
+[2017/10/07 23:22:04] [1]: Consulta: Select * from tours_pics WHERE tourid = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_pics' doesn't exist 
+[2017/10/07 23:22:53] [1]: Consulta: Select * from tours_pics WHERE tour_id = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_pics' doesn't exist 
+[2017/10/07 23:23:06] [1]: Consulta: Select * from tours_pics WHERE tour_id = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_pics' doesn't exist 
+[2017/10/07 23:24:04] [1]: Consulta: Select * from tours_pics WHERE tour_id = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_pics' doesn't exist 
+[2017/10/07 23:24:18] [1]: Consulta: Select * from tours_pics WHERE tour_id = '1' -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_pics' doesn't exist 
+[2017/10/07 23:25:13] [1]: Consulta: Select * from tour_pics WHERE tour_id = '1' -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tour_id' in 'where clause' 
+[2017/10/07 23:25:22] [1]: Consulta: Select * from tour_pics WHERE tour_id = '1' -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tour_id' in 'where clause' 
+[2017/10/08 08:23:28] [1]: Consulta: Select * from promos where recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 08:23:28] [1]: Consulta: Select * from promos WHERE recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 08:24:42] [1]: Consulta: Select * from promos where recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 08:24:42] [1]: Consulta: Select * from promos WHERE recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 08:24:57] [1]: Consulta: Select * from promos where recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 08:24:57] [1]: Consulta: Select * from promos WHERE recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 08:25:01] [1]: Consulta: Select * from promos where recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 08:25:01] [1]: Consulta: Select * from promos WHERE recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 08:26:00] [1]: Consulta: Select * from promos WHERE recid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.promos' doesn't exist 
+[2017/10/08 18:49:46] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/08 21:40:57] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 08:42:17] [1]: Consulta: Select * from rates WHERE tour_id = '33' ORDER by desde  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tour_id' in 'where clause' 
+[2017/10/09 08:42:24] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 08:42:37] [1]: Consulta: Select * from tours_schedule where tourid = '33'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_schedule' doesn't exist 
+[2017/10/09 08:45:00] [1]: Consulta: Select * from tours_schedule where tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.tours_schedule' doesn't exist 
+[2017/10/09 08:52:35] [1]: Consulta: Select * from tour_hora where tourid = '1'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tourid' in 'where clause' 
+[2017/10/09 08:52:45] [1]: Consulta: INSERT INTO tour_hora(`horario`,`tourid`) VALUES ('09:00 AM','1') -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tourid' in 'field list' 
+[2017/10/09 08:52:45] [1]: Consulta: Select * from tour_hora where tourid = '1'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tourid' in 'where clause' 
+[2017/10/09 08:53:48] [1]: Consulta: INSERT INTO tour_hora(`horario`,`tourid`) VALUES ('09:00 AM','1') -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tourid' in 'field list' 
+[2017/10/09 08:53:48] [1]: Consulta: Select * from tour_hora where tourid = '1'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tourid' in 'where clause' 
+[2017/10/09 11:30:47] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 11:35:04] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 11:38:26] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 11:38:39] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 11:42:27] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 18:22:25] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 18:23:04] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 18:24:13] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 19:12:06] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 19:13:33] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 19:13:55] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/09 19:20:32] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtrans.catego' doesn't exist 
+[2017/10/11 18:37:03] [1]: Consulta: Select * FROM reservas_tours WHERE arr_date = '2017-10-11' ORDER by recid DESC -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'where clause' 
+[2017/10/11 18:37:44] [1]: Consulta: Select * FROM reservas_tours WHERE arr_date = '2017-10-11' ORDER by recid DESC -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'where clause' 
+[2017/10/11 18:46:07] [1]: Consulta: Select * FROM reservas_tours WHERE arr_date = '2017-10-11' ORDER by recid DESC -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'where clause' 
+[2017/10/11 18:50:50] [1]: Consulta: Select * FROM reservas_tours WHERE arr_date = '2017-10-11' ORDER by recid DESC -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'where clause' 
+[2017/10/11 18:50:57] [1]: Consulta: Select * FROM reservas_tours WHERE arr_date = '2017-10-14' ORDER by recid DESC -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'where clause' 
+[2017/10/11 18:57:19] [1]: Consulta: Select * FROM reservas_tours WHERE arr_date = '2017-10-11' ORDER by recid DESC -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'where clause' 
+[2017/10/11 18:57:41] [1]: Consulta: Select * FROM reservas_tours WHERE arr_date = '2017-10-14' ORDER by recid DESC -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'where clause' 
+[2017/10/11 18:57:45] [1]: Consulta: Select * FROM reservas_tours WHERE arr_date = '2017-10-14' ORDER by recid DESC -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'where clause' 
+[2017/10/11 20:15:06] [1]: Consulta: UPDATE reservas_tours SET arr_date  ='2017-10-14',
+								 arr_time  = '',
+								 arr_aa    = '',
+								 arr_fly   = '',
+								 dep_date  = '--',
+								 dep_time  = '',
+								 dep_aa    = '',
+								 dep_fly   = '',
+								 name      = 'SANDRA',
+								 last_name = 'HOUSTON',
+								 tel       = '12121212',
+								 movil     = ' 2323232323',
+								 email     = 'casc@aol.com',
+								 silla_bebe= '',
+								 coments   = '',
+								 destino   = '',
+								 pax       = '',
+								 viaje     = '',
+								 total     = '2652.00',
+								 moneda    = 'USD',
+								 how       = '',
+								 forma_pago = 'PayPal',
+								 estatus   = '',
+								 vantype   = ''   WHERE recid = '9'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arr_date' in 'field list' 
+[2017/10/11 20:31:23] [1]: Consulta: UPDATE reservas_tours SET 
+								 name        = 'PETER',
+								 lastname    = 'SMITH',
+								 email       = 'casc@aol.com',
+								 tel         = '12121212',
+								 movil       = '2323232323',
+								 tour_id     = '1',
+                 tour_date   = '14/10/2017',
+                 tour_hora   = '10:00 AM',
+                 adl         = '',
+                 chl         = '',
+                 metodo      = 'PayPal',
+                 tour_total  = '2652.00'  WHERE recid = '9'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'adl' in 'field list' 
+[2018/05/19 01:07:43] [1]: Consulta: Select * from usuarios WHERE user = '' -- Error : SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) 
+[2018/05/19 01:07:43] [1]: Consulta: SELECT DECODE(passcode,'oswego') as contra FROM usuarios WHERE user = 'ADMIN' -- Error : SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) 
+[2018/05/19 01:07:43] [1]: Consulta: SELECT Count(*) AS total FROM usuarios WHERE user = 'ADMIN'  -- Error : SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) 
+[2018/05/19 01:16:40] [1]: Consulta: Select * from empresa  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.empresa' doesn't exist 
+[2018/05/19 01:18:06] [1]: Consulta: Select * from empresa  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.empresa' doesn't exist 
+[2018/05/19 01:18:14] [1]: Consulta: Select * from empresa  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.empresa' doesn't exist 
+[2018/05/19 01:22:23] [1]: Consulta: Select * FROM zonas ORDER BY recid  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.zonas' doesn't exist 
+[2018/05/19 01:22:29] [1]: Consulta: Select * from unidades  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.unidades' doesn't exist 
+[2018/05/19 01:24:49] [1]: Consulta: Select *, hot.recid from sys_hoteles as hot JOIN zonas as zone ON(hot.zona_id = zone.recid) ORDER BY hotel  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.sys_hoteles' doesn't exist 
+[2018/05/19 01:25:48] [1]: Consulta: Select *, hot.recid from sys_hoteles as hot JOIN zonas as zone ON(hot.zona_id = zone.recid) ORDER BY hotel  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.sys_hoteles' doesn't exist 
+[2018/05/19 01:25:53] [1]: Consulta: Select * FROM zonas ORDER BY recid  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.zonas' doesn't exist 
+[2018/05/19 01:27:26] [1]: Consulta: Select *, hot.recid from sys_hoteles as hot JOIN zonas as zone ON(hot.zona_id = zone.recid) ORDER BY hotel  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.sys_hoteles' doesn't exist 
+[2018/05/19 01:42:02] [1]: Consulta: Select *, hot.recid from sys_hoteles as hot JOIN zonas as zone ON(hot.zona_id = zone.recid) ORDER BY hotel  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.sys_hoteles' doesn't exist 
+[2018/05/19 01:43:16] [1]: Consulta: Select *, hot.recid from hoteles as hot JOIN zonas as zone ON(hot.zona_id = zone.recid) ORDER BY hotel  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hot.zona_id' in 'on clause' 
+[2018/05/19 01:43:55] [1]: Consulta: Select *, hot.recid from hoteles  ORDER BY hotel  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hot.recid' in 'field list' 
+[2018/05/19 01:45:00] [1]: Consulta: Select *, hot.recid from sys_hoteles as hot JOIN zonas as zone ON(hot.zona_id = zone.recid) WHERE hot.recid = '258' ORDER BY hotel  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.sys_hoteles' doesn't exist 
+[2018/05/19 01:45:38] [1]: Consulta: Select * WHERE recid = '258' ORDER BY hotel  -- Error : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE recid = '258' ORDER BY hotel' at line 1 
+[2018/05/19 01:45:46] [1]: Consulta: Select * WHERE recid = '258' ORDER BY hotel  -- Error : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE recid = '258' ORDER BY hotel' at line 1 
+[2018/05/19 01:46:16] [1]: Consulta: UPDATE sys_hoteles SET  hotel   = '5th Avenue Hotel',
+											zona_id = '6'  WHERE recid = '258'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.sys_hoteles' doesn't exist 
+[2018/05/19 14:59:49] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.catego' doesn't exist 
+[2018/05/19 14:59:49] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.destinos' doesn't exist 
+[2018/05/19 15:25:19] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/05/19 15:29:48] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.catego' doesn't exist 
+[2018/05/19 15:29:48] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.destinos' doesn't exist 
+[2018/05/19 15:31:36] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.catego' doesn't exist 
+[2018/05/19 15:31:36] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.destinos' doesn't exist 
+[2018/05/19 15:32:26] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.catego' doesn't exist 
+[2018/05/19 15:32:26] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.destinos' doesn't exist 
+[2018/05/19 15:35:33] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.catego' doesn't exist 
+[2018/05/19 15:35:33] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'order clause' 
+[2018/05/19 15:36:49] [1]: Consulta: select * from catego order by nombre -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.catego' doesn't exist 
+[2018/05/19 18:26:44] [1]: Consulta: select cat.recid,
+								 cat.catego,
+								 des.nombre 
+		  from tours_cat as cat JOIN destinos as des ON(cat.ubica = des.recid)
+           order by cat.catego -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_cat' doesn't exist 
+[2018/05/19 18:26:44] [1]: Consulta: select * from destinos order by nombre -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'order clause' 
+[2018/05/19 19:00:07] [1]: Consulta: INSERT INTO tours(`tit_esp`,`estatus`,`prod_code`,`prod_type`,`saliendo`,
+	`actdet_es`,`inc_es`,`exc_es`,`addinfo_es`,`actdet_in`,`actdet_in`,`inc_in`,
+	`exc_in`,`addinfo_in`)
+    VALUES('1111','Activo','2222','1','1','','',
+    '','','','','','') -- Error : SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 
+[2018/05/19 21:50:33] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/05/22 15:35:12] [1]: Consulta: INSERT INTO tours(`tit_esp`,`estatus`,`prod_code`,`prod_type`,`saliendo`,
+	`actdet_es`,`inc_es`,`exc_es`,`addinfo_es`,`actdet_in`,`inc_in`,
+	`exc_in`,`addinfo_in`,`tit_ing`,`rate_adl`,,`rate_chl`)
+    VALUES('TEST','Activo','121212','1','1','','',
+    '','','','','','','',
+    '100','80') -- Error : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`rate_chl`)
+    VALUES('TEST','Activo','121212','1','1','','',
+    '','','','','' at line 3 
+[2018/05/23 20:54:19] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/05/24 12:51:08] [1]: Consulta: Select * from addons WHERE tourid = ' -- Error : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1 
+[2018/05/24 13:08:46] [1]: Consulta: Select * from addons WHERE tourid = ' -- Error : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1 
+[2018/05/24 13:08:58] [1]: Consulta: Select * from addons WHERE tourid = ' -- Error : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1 
+[2018/05/24 13:11:05] [1]: Consulta: Select * from addons WHERE tourid = ' -- Error : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1 
+[2018/05/24 13:11:44] [1]: Consulta: Select * from addons WHERE tourid = '7 -- Error : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''7' at line 1 
+[2018/05/24 13:46:28] [1]: Consulta: select * from tours order by tit_es -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tit_es' in 'order clause' 
+[2018/05/24 13:47:52] [1]: Consulta: select * from tours order by tit_es -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tit_es' in 'order clause' 
+[2018/05/24 13:48:21] [1]: Consulta: select * from tours order by tit_es -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tit_es' in 'order clause' 
+[2018/05/24 14:11:02] [1]: Consulta: UPDATE addons SET 
+            tit_esp  = 'test', 
+            tit_ing  = 'tit_ing', 
+            desc_ing = '<p>4444</p>
+',
+            desc_esp = '<p>5555</p>
+',
+            codigo   = '111', 
+            tourid   = '--',
+            rate_adl = '66.00',
+            rate_chl = '77.00' WHERE recid = '6'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'codigo' in 'field list' 
+[2018/05/24 14:16:05] [1]: Consulta: UPDATE addons SET 
+            tit_esp  = '333', 
+            tit_ing  = 'tit_ing', 
+            desc_ing = '<p>4444</p>
+',
+            desc_esp = '<p>5555</p>
+',
+            codigo   = '111', 
+            tourid   = '7',
+            rate_adl = '66.00',
+            rate_chl = '77.00' WHERE recid = '7'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'codigo' in 'field list' 
+[2018/05/24 14:25:57] [1]: Consulta: UPDATE addons SET 
+            tit_esp  = 'tttt', 
+            tit_ing  = 'tit_ing', 
+            desc_ing = '<p>4444</p>
+',
+            desc_esp = '<p>5555</p>
+',
+            codigo   = '111', 
+            tourid   = '7',
+            rate_adl = '66.00',
+            rate_chl = '77.00' WHERE recid = '7'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'codigo' in 'field list' 
+[2018/05/24 14:26:08] [1]: Consulta: UPDATE addons SET 
+            tit_esp  = '333', 
+            tit_ing  = 'tit_ing', 
+            desc_ing = '<p>4444</p>
+',
+            desc_esp = '<p>5555</p>
+',
+            codigo   = '111', 
+            tourid   = '7',
+            rate_adl = '66.00',
+            rate_chl = '77.00' WHERE recid = '7'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'codigo' in 'field list' 
+[2018/05/24 14:26:18] [1]: Consulta: UPDATE addons SET 
+            tit_esp  = 'tttt', 
+            tit_ing  = 'tit_ing', 
+            desc_ing = '<p>4444</p>
+',
+            desc_esp = '<p>5555</p>
+',
+            codigo   = '111', 
+            tourid   = '7',
+            rate_adl = '66.00',
+            rate_chl = '77.00' WHERE recid = '7'  -- Error : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'codigo' in 'field list' 
+[2018/05/24 15:36:45] [1]: Consulta: INSERT INTO rates(`tourid`,`tit_ing`,`tit_esp`,`desc_ing`,`desc_esp`,
+    `code`,`rate_adl`,`rate_chl`) VALUES ('','22222','1111','<p>7777</p>
+','<p>6666</p>
+',
+    '33333','444','555') -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.rates' doesn't exist 
+[2018/05/24 15:37:27] [1]: Consulta: INSERT INTO rates(`tourid`,`tit_ing`,`tit_esp`,`desc_ing`,`desc_esp`,
+    `code`,`rate_adl`,`rate_chl`) VALUES ('','','qqqq','','',
+    '','','') -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.rates' doesn't exist 
+[2018/05/24 16:10:46] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/05/24 16:33:51] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/05/24 16:55:52] [1]: Consulta: Select * from tour_pics WHERE tourid = '7'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '8'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '9'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '10'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '11'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '12'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '8'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '9'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '10'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '11'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/05/28 23:15:04] [1]: Consulta: Select * FROM tours_fotos WHERE recid = '12'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tours_fotos' doesn't exist 
+[2018/06/12 12:27:32] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/06/12 12:28:31] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/06/12 12:33:18] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/06/12 13:23:02] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/06/14 11:49:19] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/06/14 11:52:01] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/06/14 12:41:04] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
+[2018/06/14 12:41:25] [1]: Consulta: Select * from tour_pics WHERE tourid = '1'  -- Error : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caribes_cve.tour_pics' doesn't exist 
