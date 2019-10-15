@@ -54,13 +54,13 @@ include 'header.php';
          
           print "<div class='col-md-4'>";
           print "<label>NAME</label>";
-          print "<input type='text' id='name' class='form-control' required>";
+          print "<input type='text' id='name' class='form-control campo'>";
           print "</div>";
 
           
           print "<div class='col-md-4'>";
           print "<label>SURNAME</label>";
-          print "<input type='text' id='surname' class='form-control' required>";
+          print "<input type='text' id='surname' class='form-control campo'>";
           print "</div>";
           print "<div class='col-md-4'>";
           print "<br><a href='#' contactid='$regis' class='addContact btn btn-info'>+Add Contact</a>";

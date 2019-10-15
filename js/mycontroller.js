@@ -59,6 +59,8 @@
 	$(".addPhone").click(function(){
 		var contactid = $(this).attr("contactid");
 		var number    = $("#number").val();
+
+
 		$.ajax({
 			url: "addphne.php",
 			data: "number=" + number + "&contactid=" + contactid + "",
@@ -128,6 +130,21 @@
 	$(".addContact").click(function(){
 		var name      = $("#name").val();
 		var surname   = $("#surname").val();
+
+		$( "input[type='text']" ).change(function() {
+             $(".campo").css("border","3px solid #EEE");             
+          });
+
+		  if(name == ''){
+             $("#name").css("border","2px solid #FF0000").focus();
+               return false;
+          }
+
+          if(surname == ''){
+             $("#surname").css("border","2px solid #FF0000").focus();
+               return false;
+          }
+
 
 		$.ajax({
 			url: "save_contact.php",
